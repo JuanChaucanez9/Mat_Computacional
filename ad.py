@@ -13,7 +13,19 @@ datos={
 df = pd.DataFrame(datos)
 df 
 
-print (df)
+#sacar promedio o media 
+media =df['edad'].mean()
+media 
+
+
+mediaC = df['nota'].mean()
+mediaC 
+
+#mayores de nota
+cal_4 = df[df['nota']>3]
+
+
+print (cal_4)
 
 
 
