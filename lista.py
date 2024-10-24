@@ -35,6 +35,21 @@ print (sietasm)
 sietasms=df[(df['carrera']=='sistemas') & (df['edad']>21)]
 print (sietasms)
 
+
 #como imputar datos 
+
 dfnull = pd.DataFrame(datos)
+print (dfnull)
+
+
+
+#sin valores nulos
+
+df_sin_nulos = dfnull.dropna(subset=['edad'])
+print (df_sin_nulos)
+
+
+#rellena datos faltantes
+
+dfnull['edad']=dfnull['edad'].fillna(df['edad'].mean())
 print (dfnull)
