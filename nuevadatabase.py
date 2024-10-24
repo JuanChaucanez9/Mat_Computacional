@@ -17,9 +17,8 @@ df=pd.read_csv('http://raw.githubusercontent.com/datasciencedojo/datasets/master
 #print(muertos)
 
 
-#visualisacion driagrama  de barras usando 
+#visualizacion driagrama  de barras usando 
 
-sbn.countplot(x='sex', hue='Survived', data=df)
+sbn.countplot(x='Sex', hue='Survived', data=df)
 plt.title('Grafica de sobrvivientes vs edad')
 plt.show()
-print(plt.show() )
